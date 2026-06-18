@@ -1,10 +1,10 @@
-package com.sistemalogin.demo;
+package com.projeto_Aluno360.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SistemaLogin1ApplicationTests {
+class projeto_Aluno360ApplicationTests {
 
 	@Test
 	void contextLoads() {
