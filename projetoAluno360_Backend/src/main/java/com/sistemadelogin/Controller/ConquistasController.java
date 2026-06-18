@@ -1,4 +1,4 @@
-package com.sistemadelogin.Controller;
+package projeto_Aluno360.Controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.sistemadelogin.Entity.Conquistas;
-import com.sistemadelogin.Service.ConquistaService;
+import com.projeto_Aluno360.Entity.Conquistas;
+import com.projeto_Aluno360.Service.ConquistaService;
 
 
 import lombok.RequiredArgsConstructor;
@@ -49,7 +49,7 @@ import lombok.RequiredArgsConstructor;
 		public String deletar(@PathVariable Long id) {
 			service.deletar(id);
 			
-			return "Conquistas deletados com sucesso";
+			return "Conquistas foram deletadas com sucesso";
 		}
 
 	}
