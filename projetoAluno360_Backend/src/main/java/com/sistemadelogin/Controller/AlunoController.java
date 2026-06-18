@@ -1,4 +1,4 @@
-package com.sistemadelogin.Controller;
+package com.projeto_Aluno360.Controller;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sistemadelogin.Entity.Aluno;
-import com.sistemadelogin.Service.AlunoService;
+import com.projeto_Aluno360.Entity.Aluno;
+import com.projeto_Aluno360.Service.AlunoService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -28,7 +28,6 @@ public class AlunoController {
 	@PostMapping
 	public Aluno cadastrar(@RequestBody Aluno aluno) {
 		return service.cadastrar(aluno);
-		
 	}
 	
 	@GetMapping
@@ -51,7 +50,7 @@ public class AlunoController {
 	public String deletar(@PathVariable Long id) {
 		service.deletar(id);
 		
-		return "Aluno deletado com sucesso";
+		return "Aluno deletado com sucesso!";
 	}
 	
 }
