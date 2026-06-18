@@ -1,4 +1,4 @@
-package com.sistemadelogin.Controller;
+package com.projeto_Aluno360.Controller;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sistemadelogin.Entity.Cursos;
-import com.sistemadelogin.Service.CursosService;
+import com.projeto_Aluno360.Entity.Cursos;
+import com.projeto_Aluno360.Service.CursosService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -47,7 +47,7 @@ public class CursosController {
 	public String deletar(@PathVariable Long id) {
 		service.deletar(id);
 		
-		return "Cursos deletados com sucesso";
+		return "Cursos foram deletados com sucesso!";
 	}
 
 }
